@@ -25,7 +25,7 @@
             var privateIPRegex = /(^10\.)|(^172\.1[6-9]\.)|(^172\.2[0-9]\.)|(^172\.3[0-1]\.)|(^192\.168\.)/;
             var callback;
             if(privateIPRegex.test(location.hostname)) { // if private IP has been detected
-                var dummyDomain = "node-red.example.com";
+                var dummyDomain = "192.168.1.46:1880";
                 var actualIP = location.hostname;
                 callback = location.protocol + "//" +
                            dummyDomain +
